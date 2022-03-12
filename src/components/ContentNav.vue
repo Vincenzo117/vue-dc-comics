@@ -63,8 +63,8 @@ export default {
     ul {
       flex-grow: 1;
       display: flex;
-      gap: 15px;
-      justify-content: space-around;
+      gap: 10px;
+      justify-content: space-evenly;
 
       li {
         width: max-content;
