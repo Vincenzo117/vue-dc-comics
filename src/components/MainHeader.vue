@@ -89,9 +89,8 @@ export default {
 
 .container {
   @include container;
-  display: flex;
+  @include banner;
   justify-content: space-between;
-  align-items: center;
   gap: 20px;
 
   .logo {
@@ -121,7 +120,7 @@ export default {
         position: absolute;
         left: 0;
         right: 0;
-        top: 61px;
+        top: 62px;
         background-color: #0082f9;
       }
     }

@@ -1,9 +1,16 @@
 <template>
-  <section id="main-content">
-    <!-- qui il contenuto principale -->
-
-    <ContentNav />
-  </section>
+  <main id="main-content">
+    <section id="main-content">
+      <div class="container">
+        <div> Content goes here </div>
+      </div>
+    </section>
+    <section id="content-nav">
+      <div class="container">
+        <ContentNav />
+      </div>
+    </section>
+  </main>
 </template>
 
 
@@ -18,4 +25,23 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import "../assets/scss/mixins.scss";
+
+main {
+  color: white;
+
+    .container {
+      @include container;
+      @include banner;
+    }
+
+  #main-content {
+    background-color: #1c1c1c;
+
+    .container {
+      min-height: 150px;
+      justify-content: center;
+    }
+  }
+}
 </style>

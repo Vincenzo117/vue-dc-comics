@@ -3,3 +3,8 @@
     margin: 0 auto;
     padding: 15px;
 }
+
+@mixin banner {
+    display: flex;
+    align-items: center;
+}
