@@ -3,10 +3,15 @@
     <figure class="logo">
       <img src="../assets/dc-logo.png" alt="" />
     </figure>
+
     <nav>
       <ul>
-        <li v-for="(item, i) in navItems" :key="i" :class="item.active ? 'active' : ''">
-            <a href="#">{{ item.text }}</a>
+        <li
+          v-for="(item, i) in navItems"
+          :key="i"
+          :class="item.active ? 'active' : ''"
+        >
+          <a :href="item.href">{{ item.text }}</a>
         </li>
       </ul>
     </nav>
@@ -20,45 +25,55 @@ export default {
     return {
       navItems: [
         {
-            text: 'Characters',
-            active: true
+          text: "Characters",
+          href: "#",
+          active: true,
         },
         {
-            text: 'Comics',
-            active: false
+          text: "Comics",
+          href: "#",
+          active: false,
         },
         {
-            text: 'Movies',
-            active: false
+          text: "Movies",
+          href: "#",
+          active: false,
         },
         {
-            text: 'TV',
-            active: false
+          text: "TV",
+          href: "#",
+          active: false,
         },
         {
-            text: 'Games',
-            active: false
+          text: "Games",
+          href: "#",
+          active: false,
         },
         {
-            text: 'Collectibles',
-            active: false
+          text: "Collectibles",
+          href: "#",
+          active: false,
         },
         {
-            text: 'Videos',
-            active: false
+          text: "Videos",
+          href: "#",
+          active: false,
         },
         {
-            text: 'Fans',
-            active: false
+          text: "Fans",
+          href: "#",
+          active: false,
         },
         {
-            text: 'News',
-            active: false
+          text: "News",
+          href: "#",
+          active: false,
         },
         {
-            text: 'Shop',
-            active: false
-        }
+          text: "Shop",
+          href: "#",
+          active: false,
+        },
       ],
     };
   },

@@ -1,17 +1,16 @@
 <template>
-  <section id="nav">
-      <nav>
-          <ul></ul>
-      </nav>
+  <section id="content-nav">
+    <nav>
+      <ul></ul>
+    </nav>
   </section>
 </template>
 
 <script>
 export default {
-    name:'MainNav'
-}
+  name: "ContentNav",
+};
 </script>
 
 <style lang='scss' scoped>
-    
 </style>

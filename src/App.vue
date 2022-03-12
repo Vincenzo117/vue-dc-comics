@@ -2,8 +2,6 @@
   <div id="app">
     <MainHeader />
     <MainContent />
-    <MainNav />
-    <FooterNav />
     <MainFooter />
   </div>
 </template>
@@ -11,8 +9,6 @@
 <script>
 import MainHeader from "./components/MainHeader.vue";
 import MainContent from "./components/MainContent.vue";
-import MainNav from "./components/MainNav.vue";
-import FooterNav from "./components/FooterNav.vue";
 import MainFooter from "./components/MainFooter.vue";
 
 export default {
@@ -20,8 +16,6 @@ export default {
   components: {
     MainHeader,
     MainContent,
-    MainNav,
-    FooterNav,
     MainFooter,
   },
 };

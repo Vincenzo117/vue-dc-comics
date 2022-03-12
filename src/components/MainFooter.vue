@@ -1,18 +1,21 @@
 <template>
   <footer class="footer">
-      <button></button>
-      <nav>
-          <ul></ul>
-      </nav>
+    <!-- qui ci vanno le liste  -->
+
+    <FooterSocial />
   </footer>
 </template>
 
 <script>
+import FooterSocial from "./FooterSocial.vue";
+
 export default {
-    name:'MainFooter'
-}
+  name: "MainFooter",
+  components: {
+    FooterSocial,
+  },
+};
 </script>
 
 <style lang='scss' scoped>
-    
 </style>

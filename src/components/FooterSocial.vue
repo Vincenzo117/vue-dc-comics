@@ -1,10 +1,10 @@
 <template>
-  <section id="footer-nav"></section>
+  <section id="footer-social"></section>
 </template>
 
 <script>
 export default {
-  name: "FooterNav",
+  name: "FooterSocial",
 };
 </script>
 
