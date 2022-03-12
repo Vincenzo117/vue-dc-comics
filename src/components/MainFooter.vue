@@ -203,21 +203,21 @@ export default {
       .col {
         width: calc(100% / 3);
 
-        ul{
-            margin-bottom: 30px;
+        ul {
+          margin-bottom: 30px;
 
-            h4 {
-                font-size: 19px;
-                font-weight: 600;
-                margin-bottom: 14px;
-                text-transform: uppercase;
-            }
+          h4 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+          }
 
-            li{
-                font-size: 14px;
-                color: #959595;
-                line-height: 20px;
-            }
+          li {
+            font-size: 14px;
+            color: #959595;
+            line-height: 20px;
+          }
         }
       }
     }
@@ -227,7 +227,7 @@ export default {
       right: 0;
       top: -20px;
       bottom: -20px;
-      width: 560px;   
+      width: 560px;
       background: url("../assets/img/dc-logo-bg.png") no-repeat center;
       background-size: cover;
     }
