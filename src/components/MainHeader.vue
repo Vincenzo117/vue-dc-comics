@@ -1,20 +1,24 @@
 <template>
   <header class="header">
-    <figure class="logo">
-      <img src="../assets/dc-logo.png" alt="" />
-    </figure>
+    <div class="container">
 
-    <nav>
-      <ul>
-        <li
-          v-for="(item, i) in navItems"
-          :key="i"
-          :class="item.active ? 'active' : ''"
-        >
-          <a :href="item.href">{{ item.text }}</a>
-        </li>
-      </ul>
-    </nav>
+      <figure class="logo">
+        <img src="../assets/img/dc-logo.png" alt="" />
+      </figure>
+
+      <nav>
+        <ul>
+          <li
+            v-for="(item, i) in navItems"
+            :key="i"
+            :class="item.active ? 'active' : ''"
+          >
+            <a :href="item.href">{{ item.text }}</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 </template>
 
@@ -27,12 +31,12 @@ export default {
         {
           text: "Characters",
           href: "#",
-          active: true,
+          active: false,
         },
         {
           text: "Comics",
           href: "#",
-          active: false,
+          active: true,
         },
         {
           text: "Movies",
@@ -81,10 +85,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.header {
-  padding: 15px 0;
-  width: 80vw;
-  margin: 0 auto;
+@import "../assets/scss/mixins.scss";
+
+.container {
+  @include container;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,8 +105,10 @@ export default {
 
     li {
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 14px;
       position: relative;
+      transition: color ease-in-out 100ms;
 
       &.active,
       &:hover {
@@ -111,12 +117,11 @@ export default {
 
       &.active:after {
         content: " ";
-        height: 5px;
+        height: 4px;
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -0px;
-        top: 60px;
+        top: 61px;
         background-color: #0082f9;
       }
     }
