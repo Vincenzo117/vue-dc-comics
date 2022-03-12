@@ -2,14 +2,10 @@
   <main id="main-content">
     <section id="main-content">
       <div class="container">
-        <div> Content goes here </div>
+        <div>Content goes here</div>
       </div>
     </section>
-    <section id="content-nav">
-      <div class="container">
-        <ContentNav />
-      </div>
-    </section>
+    <ContentNav />
   </main>
 </template>
 
@@ -30,18 +26,16 @@ export default {
 main {
   color: white;
 
-    .container {
-      @include container;
-      @include banner;
-    }
-
   #main-content {
     background-color: #1c1c1c;
 
     .container {
+      @include container;
+      @include banner;
       min-height: 150px;
       justify-content: center;
     }
   }
+
 }
 </style>
