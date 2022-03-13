@@ -100,7 +100,7 @@ export default {
 
   ul {
     display: flex;
-    gap: 10px;
+    gap: 25px;
 
     li {
       text-transform: uppercase;
