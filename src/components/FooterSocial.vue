@@ -21,23 +21,23 @@ export default {
     return {
       socials: [
         {
-          img: "../assets/img/footer-facebook.png",
+          img: require("../assets/img/footer-facebook.png"),
           href: "#",
         },
         {
-          img: "../assets/img/footer-twitter.png",
+          img: require("../assets/img/footer-twitter.png"),
           href: "#",
         },
         {
-          img: "../assets/img/footer-youtube.png",
+          img: require("../assets/img/footer-youtube.png"),
           href: "#",
         },
         {
-          img: "../assets/img/footer-pinterest.png",
+          img: require("../assets/img/footer-pinterest.png"),
           href: "#",
         },
         {
-          img: "../assets/img/footer-periscope.png",
+          img: require("../assets/img/footer-periscope.png"),
           href: "#",
         },
       ],

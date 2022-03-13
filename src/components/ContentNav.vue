@@ -20,27 +20,27 @@ export default {
     return {
       navItems: [
         {
-          img: "../assets/img/buy-comics-digital-comics.png",
+          img: require("../assets/img/buy-comics-digital-comics.png"),
           text: "Digital Comics",
           href: "#",
         },
         {
-          img: "../assets/img/buy-comics-merchandise.png",
+          img: require("../assets/img/buy-comics-merchandise.png"),
           text: "DC Merchandise",
           href: "#",
         },
         {
-          img: "../assets/img/buy-comics-subscriptions.png",
+          img: require("../assets/img/buy-comics-subscriptions.png"),
           text: "Subscription",
           href: "#",
         },
         {
-          img: "../assets/img/buy-comics-shop-locator.png",
+          img: require("../assets/img/buy-comics-shop-locator.png"),
           text: "Comic Shop Locator",
           href: "#",
         },
         {
-          img: "../assets/img/buy-comics-power-visa.png",
+          img: require("../assets/img/buy-dc-power-visa.svg"),
           text: "DC Power Visa",
           href: "#",
         },
@@ -59,6 +59,7 @@ export default {
   .container {
     @include container;
     @include banner;
+    padding: 50px 0;
 
     ul {
       flex-grow: 1;
@@ -71,13 +72,14 @@ export default {
 
         a {
           @include banner;
-          gap: 5px;
+          gap: 10px;
           text-transform: uppercase;
           white-space: nowrap;
           font-size: 14px;
 
           img {
-            width: 45px;
+            max-width: 45px;
+            height: 50px;
           }
         }
       }
